@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 230px;
+    width: 100%;
+    background: #dcdcdc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo-name {
+    height: 100px;
+    width: 273px;
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.company-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #777777;
+    margin-left: 10px;
+}
+
+.company-name-big, .company-name-small {
+    margin: 0;
+}
+
+
+.phone-box {
+    height: 100px;
+    width: 273px;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: end;
+}
+
+.phone {
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #777777;
+    font-size: 40px;
+}
+
+.phone-box-text {
+    color: #777777;
+    margin: 0;
+    font-family: sans-serif;
+    border-bottom: 2px #777777 dashed;
+}
+
+@media screen and (max-width: 680px) {
+
+    .header {
+        flex-direction: column;
+
+    }
+    .phone{font-size: 15px}
+    .phone-box{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
