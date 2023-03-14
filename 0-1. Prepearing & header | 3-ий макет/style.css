@@ -3,9 +3,18 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.wrap {
-    display: flex;
-    justify-content: center;
+.line {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+}
+
+.line:hover {
+    background-size: 100% 2px;
+
 }
 
 .header {
@@ -20,7 +29,7 @@ body {
 
 .logo-name {
     height: 100px;
-    width: 273px;
+
     display: flex;
 }
 
@@ -65,15 +74,108 @@ body {
     border-bottom: 2px #777777 dashed;
 }
 
+.menu {
+    height: 80px;
+    background: #777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.menu-burg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-wrap {
+    padding: 0 10px;
+    border-right: #f8f8f8 solid 2px;
+}
+
+.menu-wrap-sp {
+    padding: 0 10px;
+
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.mob-menu {
+    display: none;
+}
+
+
+/*burger*/
+
+#burg, [for=burg] {
+    display: none
+}
+
+#burg2, [for=burg] {
+    display: none
+}
+.uil-x{
+    display: none;
+}
 @media screen and (max-width: 680px) {
+    .logo {
+        display: none;
+    }
+
+    .company-name {
+        align-items: center;
+    }
 
     .header {
         flex-direction: column;
 
     }
-    .phone{font-size: 15px}
-    .phone-box{
+
+    .phone {
+        font-size: 15px
+    }
+
+    .phone-box {
         align-items: center;
         justify-content: space-evenly;
     }
+
+
+    /*burger*/
+
+    .menu-burg {
+        background: #777777;
+align-items: start;
+
+    }
+
+    [for=burg] {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .menu-wrap, .menu-wrap-sp {
+        display: none;
+    }
+
+.uil-x{
+
+}
+
+    #burg:checked + ul {
+        display: block;
+
+    }
+    #burg2:checked +input {
+        display: block;
+
+    }
+
 }
