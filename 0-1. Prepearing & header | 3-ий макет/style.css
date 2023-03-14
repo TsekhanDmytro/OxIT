@@ -76,20 +76,13 @@ body {
 
 .menu {
     height: 80px;
-    background: #777777;
+    background: rgba(119, 119, 119, 0.59);
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-
-.menu-burg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .menu-wrap {
     padding: 0 10px;
@@ -110,19 +103,7 @@ body {
     display: none;
 }
 
-
-/*burger*/
-
-#burg, [for=burg] {
-    display: none
-}
-
-#burg2, [for=burg] {
-    display: none
-}
-.uil-x{
-    display: none;
-}
+/*MEDIA*/
 @media screen and (max-width: 680px) {
     .logo {
         display: none;
@@ -146,36 +127,12 @@ body {
         justify-content: space-evenly;
     }
 
-
-    /*burger*/
-
-    .menu-burg {
-        background: #777777;
-align-items: start;
-
-    }
-
-    [for=burg] {
-        display: flex;
-        justify-content: center;
-
-    }
-
     .menu-wrap, .menu-wrap-sp {
         display: none;
     }
 
-.uil-x{
-
-}
-
-    #burg:checked + ul {
+    .mob-menu {
         display: block;
-
+        background: rgba(119, 119, 119, 0.59);
     }
-    #burg2:checked +input {
-        display: block;
-
-    }
-
 }

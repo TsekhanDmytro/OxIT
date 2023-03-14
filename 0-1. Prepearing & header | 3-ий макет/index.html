@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-btn.css">
     <title>Prepearing & header | 3-ий макет</title>
 
 </head>
@@ -17,6 +17,11 @@
 <div class="wrap">
 
     <div class="header">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="logo-name">
             <img class="logo" src="img/pasted%20image%200.png" alt="logo">
             <div class="company-name">
@@ -32,23 +37,21 @@
         </div>
 
     </div>
+
     <div class="menu">
+
         <div class="menu-burg">
-            <input type="checkbox" id="burg2">
-            <input type="checkbox" id="burg">
-            <ul class="mob-menu">
-                <li><a class="menu-item"  href="" >Головна</a></li>
-                <li><a class="menu-item" href="">Каталог</a></li>
-                <li><a class="menu-item" href="">Доставка та оплата</a></li>
-                <li><a class="menu-item" href="">Прайс-лист</a></li>
-                <li><a class="menu-item" href="">Контакти</a></li>
-
-            </ul>
-            <label for="burg"><i class="uil uil-align-justify"></i></label>
-            <label for="burg2"><i class="uil uil-x"></i></label>
-
-
+            <nav>
+                <ul class="mob-menu">
+                    <li><a class="menu-item" href="">Головна</a></li>
+                    <li><a class="menu-item" href="">Каталог</a></li>
+                    <li><a class="menu-item" href="">Доставка та оплата</a></li>
+                    <li><a class="menu-item" href="">Прайс-лист</a></li>
+                    <li><a class="menu-item" href="">Контакти</a></li>
+                </ul>
+            </nav>
         </div>
+
         <div class="menu-wrap "><a class="menu-item line" href="">Головна</a></div>
         <div class="menu-wrap "><a class="menu-item line" href="">Каталог</a></div>
         <div class="menu-wrap "><a class="menu-item line" href="">Доставка та оплата</a></div>
@@ -58,5 +61,6 @@
 
     </div>
 </div>
+<script src="menu.js"></script>
 </body>
 </html>
