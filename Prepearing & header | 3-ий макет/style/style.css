@@ -1,3 +1,8 @@
+.wrap{
+    margin: 0;
+    width: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
@@ -97,6 +102,8 @@ body {
 .menu-item {
     text-decoration: none;
     color: #f8f8f8;
+    cursor: pointer;
+
 }
 
 .mob-menu {

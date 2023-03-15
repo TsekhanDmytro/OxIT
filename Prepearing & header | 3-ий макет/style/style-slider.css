@@ -1,0 +1,25 @@
+.slider {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+    height: 100%;
+
+
+}
+
+
+.button-slide {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 0 1%;
+    top: 50%;
+}
+

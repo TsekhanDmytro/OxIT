@@ -8,14 +8,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-btn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-btn.css">
+    <link rel="stylesheet" href="style/style-slider.css">
     <title>Prepearing & header | 3-ий макет</title>
 
 </head>
 <body>
 <div class="wrap">
-<!--    HEADER-->
+    <!----------------------    HEADER-->
     <div class="header">
 
         <div class="logo-name">
@@ -38,7 +40,7 @@
         <span></span>
         <span></span>
     </div>
-<!--    MENU-->
+    <!--------------------------    MENU-->
     <div class="menu">
 
         <div class="menu-burg">
@@ -61,15 +63,25 @@
 
 
     </div>
-<!--    SLIDER  -->
-    <div class="slider-line">
-        <img src="img/slide_1.png" alt="1" >
-        <img src="img/slide_2.png" alt="2" >
-    </div>
+    <!-----------------------    SLIDER  -->
+    <div class="slider">
+        <div class="slider-line">
+            <img src="img/slide_1.png" alt="1">
+            <img src="img/slide_1.png" alt="1">
+            <img src="img/slide_1.png" alt="1">
+            <img src="img/slide_2.png" alt="2">
+            <img src="img/slide_2.png" alt="2">
+            <img src="img/slide_2.png" alt="2">
+        </div>
+        <div class="button-slide">
+            <button class="button slider-prev"><img src="img/arrow_left.png" alt="1"></button>
+            <button class="button slider-next"><img src="img/arrow_right.png" alt="2"></button>
+        </div>
 
-    <button><img src="img/arrow_left.png" alt="1" ></button>
-    <button><img src="img/arrow_right.png" alt="2" ></button>
+    </div>
 </div>
-<script src="menu.js"></script>
+<script src="script/menu.js"></script>
+<script src="script/slider.js"></script>
+
 </body>
 </html>
