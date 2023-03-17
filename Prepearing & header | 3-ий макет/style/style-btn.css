@@ -5,10 +5,10 @@
         width: 30px;
         height: 30px;
         position: fixed;
-        z-index: 2;
         overflow: hidden;
         right: 10px;
         top: 10px;
+        z-index: 3;
     }
 
     .menu-btn span {

@@ -1,25 +1,45 @@
-.slider {
-    max-width: 100%;
-    margin: 0;
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+
+.slick {
     overflow: hidden;
-    display: flex;
 }
 
-.slider-line {
-    display: flex;
-    transition: all ease 1s;
-    height: 100%;
+.slider img {
+    width: 100%;
+}
 
-
+.slider {
+    position: relative;
+    overflow: hidden;
 }
 
 
-.button-slide {
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
+.slider .slick-arrow {
     position: absolute;
-    margin: 0 1%;
-    top: 50%;
+    top: 40%;
+    z-index: 1;
+    font-size: 0;
+    height: 18%;
+    width: 4%;
+
+}
+
+.slider .slick-arrow.slick-prev {
+
+    left: 0;
+    margin-left: 13%;
+    background: url('../img/arrow_left.png') 0 0 / 100% no-repeat;
+}
+
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    margin-right: 13%;
+    background: url('../img/arrow_right.png') 0 0 / 100% no-repeat;
 }
 
