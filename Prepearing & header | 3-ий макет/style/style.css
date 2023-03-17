@@ -4,9 +4,16 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-.wrap {
+.text-color-gray {
+    color: #777777;
+    text-decoration: none;
 
-    width: 100%;
+}
+
+.wrap {
+display: flex;
+    flex-direction: column;
+
 }
 
 .line {
@@ -50,7 +57,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #777777;
     margin-left: 10px;
 }
 
@@ -72,12 +78,10 @@ body {
 .phone {
     font-family: 'PT Sans', sans-serif;
     text-decoration: none;
-    color: #777777;
     font-size: 40px;
 }
 
 .phone-box-text {
-    color: #777777;
     margin: 0;
     font-family: sans-serif;
     border-bottom: 2px #777777 dashed;
@@ -91,6 +95,7 @@ body {
     align-items: center;
     z-index: 2;
 }
+
 
 .menu-wrap {
     padding: 0 10px;
@@ -113,6 +118,56 @@ body {
     display: none;
 }
 
+/*----------small-menu-div*/
+.small-menu {
+    display: flex;
+    margin-left: 13%;
+}
+
+.small-menu-div {
+    text-decoration: none;
+    margin-right: 1%;
+}
+/*---------CONTENT*/
+.content-wrap{
+    max-width: 800px;
+    border: 2px solid red;
+    display: flex;
+    margin: auto;
+}
+.lng{
+    position: relative;
+}
+.lng:hover .lng-list-wrap{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+.lng-link{
+    color: aqua;
+    text-decoration: none;
+    position: relative;
+}
+
+.lng-list-wrap{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 15px);
+    opacity: 0;
+    visibility:  hidden;
+    transition: all .2s ease;
+
+}
+.lng-list{
+    box-shadow: seagreen;
+
+}
+.lng-list a{
+    padding: 5px 10px;
+    color: rgba(171, 4, 4, 0.59);
+    text-decoration: none;
+}
 /*MEDIA*/
 @media screen and (max-width: 680px) {
     .logo {
@@ -145,5 +200,8 @@ body {
         display: block;
         background: rgba(119, 119, 119, 0.59);
         z-index: 2;
+    }
+    .small-menu{
+        display: none;
     }
 }
