@@ -11,7 +11,7 @@ body {
 }
 
 .wrap {
-display: flex;
+    display: flex;
     flex-direction: column;
 
 }
@@ -122,52 +122,73 @@ display: flex;
 .small-menu {
     display: flex;
     margin-left: 13%;
+    margin-bottom: 10px;
 }
 
 .small-menu-div {
     text-decoration: none;
     margin-right: 1%;
 }
+
 /*---------CONTENT*/
-.content-wrap{
+
+.content-wrap {
+    width: 100%;
     max-width: 800px;
-    border: 2px solid red;
     display: flex;
+    justify-content: space-between;
+    margin-left: 13%;
+}
+
+/*---------CONTENT-LEFT*/
+
+.content-left-manu {
+    width: 20%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
-.lng{
+
+.lng {
     position: relative;
+    margin-top: 5px;
 }
-.lng:hover .lng-list-wrap{
+
+.lng:hover .lng-list-wrap {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);
+    position: relative;
 }
-.lng-link{
-    color: aqua;
+
+.lng-link {
     text-decoration: none;
     position: relative;
 }
 
-.lng-list-wrap{
+.lng-list-wrap {
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, 15px);
     opacity: 0;
-    visibility:  hidden;
-    transition: all .2s ease;
+    visibility: hidden;
+}
+.lng-list a:hover{
+    font-weight: bolder;
+}
 
-}
-.lng-list{
-    box-shadow: seagreen;
 
+
+
+/*----------------CONTENT-RIGHT*/
+.content-right-goods {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
-.lng-list a{
-    padding: 5px 10px;
-    color: rgba(171, 4, 4, 0.59);
-    text-decoration: none;
-}
+
 /*MEDIA*/
 @media screen and (max-width: 680px) {
     .logo {
@@ -201,7 +222,11 @@ display: flex;
         background: rgba(119, 119, 119, 0.59);
         z-index: 2;
     }
-    .small-menu{
+
+    .small-menu {
         display: none;
+    }
+    .content-wrap{
+        margin-left: 5px;
     }
 }
