@@ -157,7 +157,8 @@ body {
     max-width: 980px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+
+    margin: 30px auto auto auto;
 
 }
 
