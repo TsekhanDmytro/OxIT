@@ -16,13 +16,18 @@
 .slider {
     position: relative;
     overflow: hidden;
+    width: 980px;
 }
-
+.slider-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .slider .slick-arrow {
     position: absolute;
     top: 40%;
-    z-index: 1;
+    z-index: 1000;
     font-size: 0;
     height: 18%;
     width: 4%;
