@@ -19,7 +19,9 @@ body {
     text-decoration-line: underline;
 
 }
-
+.marg0{
+    margin: 0;
+}
 .wrap {
     display: flex;
     flex-direction: column;
@@ -97,7 +99,6 @@ body {
 }
 
 .phone-box-text {
-    margin: 0;
     font-family: sans-serif;
     border-bottom: 2px #777777 dashed;
 }
@@ -123,10 +124,8 @@ body {
 }
 
 .menu-item {
-    text-decoration: none;
     color: #f8f8f8;
     cursor: pointer;
-
 }
 
 .mob-menu {
@@ -213,12 +212,13 @@ body {
 .content-left-logo p {
     text-decoration: none;
     width: 150px;
-    color: black;
+
     font-size: 30px;
     margin-top: 0;
-
 }
-
+.content-left-logo p a{
+    color: black;
+}
 
 /*----------------CONTENT-RIGHT*/
 
@@ -298,6 +298,27 @@ body {
     width: 45%;
 }
 
+.footer-wrap{
+    background: #777777;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 220px;
+}
+.footer{
+    display: flex;
+    width: 980px;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.footer-dev{
+    display: flex;
+    align-items: flex-start
+}
+.content-text-mobile{
+    display: none;
+}
 /*MEDIA*/
 @media screen and (max-width: 680px) {
     .logo {
@@ -355,13 +376,28 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
-    .content-text-right {
-        display: none;
+    .content-right{
+        padding-bottom: 0;
     }
 
-    .content-text-left {
-        margin-left: 30px;
-
+    .content-text-bottom{
+        display: none;
+    }
+    .content-text-mobile{
+        display: block;
+        margin:  20px;
+    }
+    .footer{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .footer .footer-menu{
+        display: none;
+    }
+    .footer-mail{
+        margin-bottom: 15px;
+    }
+    .company-img-foo{
+        display: none;
     }
 }
