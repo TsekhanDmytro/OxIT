@@ -18,6 +18,7 @@
     overflow: hidden;
     width: 980px;
 }
+
 .slider-wrap{
     display: flex;
     justify-content: space-around;

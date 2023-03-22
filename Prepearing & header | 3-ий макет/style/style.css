@@ -110,6 +110,17 @@ html ,body {
 .phone-box-text {
     font-family: sans-serif;
     border-bottom: 2px #777777 dashed;
+    font-size: 20px;
+}
+.header-btn{
+    border: none;
+    outline: none;
+    background: gainsboro;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+
+
 }
 
 .menu {
@@ -142,11 +153,15 @@ html ,body {
 }
 
 /*----------small-menu-div*/
+.small-menu-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .small-menu {
     width: 980px;
     display: flex;
     justify-content: start;
-    margin: 0  auto 0;
 
 }
 
@@ -207,6 +222,10 @@ html ,body {
     transform: translate(-50%, 15px);
     opacity: 0;
     visibility: hidden;
+    display: flex;
+}
+.lng-list{
+    margin: 5px auto 5px;
 }
 
 .lng-list a:hover {

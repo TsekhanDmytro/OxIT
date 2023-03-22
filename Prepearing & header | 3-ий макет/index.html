@@ -18,34 +18,35 @@
 </head>
 <body>
 <div class="wrap-all">
-    <div class="form-wrap">
+    <div class="form_wrap">
         <article class="form">
             <div class="block">
-                <button class="X"><img src="img/закрыть.png" alt="btn"></button>
-                <h3 class="marg0 text-color-gray">Зворотній Зв'язок</h3>
-                <div>
-                    <p class="text-color-gray">Ваше Іім'я*</p>
-                    <form></form>
-                </div>
-                <div>
-                    <p class="text-color-gray">Телефон*</p>
-                    <form></form>
-                </div>
-                <div>
-                    <p class="text-color-gray">Emal*</p>
-                    <form></form>
-                </div>
-                <div>
-                    <p class="text-color-gray">Повідомлення</p>
-                    <form></form>
-                </div>
-                <div>
-                    <button  class="form-bottom">Відправити</button>
-                </div>
+                <form name="form1">
+                    <button class="X"><img src="img/закрыть.png" alt="btn"></button>
+                    <h3 class="marg0 text-color-gray">Зворотній Зв'язок</h3>
+                    <div>
+                        <p class="text-color-gray">Ваше Іім'я*</p>
+                        <input class="input-stile" type="text" name="Name">
+                    </div>
+                    <div>
+                        <p class="text-color-gray">Телефон*</p>
+                        <input class="input-stile" type="number" name="Number">
+                    </div>
+                    <div>
+                        <p class="text-color-gray">Emal*</p>
+                        <input class="input-stile" type="email" name="Email">
+                    </div>
+                    <div>
+                        <p class="text-color-gray">Повідомлення</p>
+                        <textarea class="textarea-meseg"></textarea>
+                    </div>
+                    <div>
+                        <button class="form-bottom">Відправити</button>
+                    </div>
+                </form>
             </div>
         </article>
     </div>
-
 
     <div class="wrap">
         <!---------------------------    HEADER-->
@@ -62,7 +63,9 @@
                 <div class="phone-box">
                     <a class="phone text-color-gray" href="tel:123-456-7890">123-456-7890</a>
                     <a class="phone text-color-gray" href="tel:123-456-7890">123-456-7890</a>
-                    <h4 class="phone-box-text  marg0 "><a class="text-color-gray open" href="#">Зворотній зв'язок</a></h4>
+                    <h4 class="phone-box-text  marg0 ">
+                        <button class="open header-btn text-color-gray ">Зворотній зв'язок</button>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -106,12 +109,14 @@
             </div>
         </div>
         <!---------------------------    CONTENT-->
-        <div class="small-menu">
-            <div class="small-menu-div under-line"><a class="text-color-gray " href="">Головна</a></div>
-            <p class="small-menu-p text-color-gray">/</p>
-            <div class="small-menu-div under-line"><a class="text-color-gray " href="">Каталог</a></div>
-            <p class="small-menu-p text-color-gray">/</p>
-            <div class="small-menu-div"><a class="text-color-gray " href="">Доставка та оплата</a></div>
+        <div class="small-menu-wrap">
+            <div class="small-menu">
+                <div class="small-menu-div under-line"><a class="text-color-gray " href="">Головна</a></div>
+                <p class="small-menu-p text-color-gray">/</p>
+                <div class="small-menu-div under-line"><a class="text-color-gray " href="">Каталог</a></div>
+                <p class="small-menu-p text-color-gray">/</p>
+                <div class="small-menu-div"><a class="text-color-gray " href="">Доставка та оплата</a></div>
+            </div>
         </div>
         <div class="content-wrap ">
             <div class="content-left">
@@ -182,7 +187,6 @@
                         </ul>
                     </div>
                 </div>
-
 
                 <div class="content-left-logo"><a href='#'><img src="img/MS%20-%20EXCEL.png" alt="img"></a>
                     <p><a href="#">Прайс-лист</a></p></div>
