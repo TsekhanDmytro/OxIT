@@ -208,6 +208,8 @@ html ,body {
     visibility: visible;
     transform: translate(-50%, 0);
     position: relative;
+    transition: transform 0.5s;
+
 }
 
 .lng-link {
@@ -230,6 +232,7 @@ html ,body {
 
 .lng-list a:hover {
     font-weight: bolder;
+
 }
 
 .content-left-logo {

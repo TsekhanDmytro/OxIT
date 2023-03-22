@@ -59,6 +59,13 @@ input{
 .input-stile{
     height: 40px;
     width: 75%;
+
+
+
+}
+.input-stile:hover{
+    box-shadow: 0 0 10px 3px #7777;
+    transition: all 0.5s;
 }
 .textarea-meseg{
     width: 75%;
@@ -66,6 +73,10 @@ input{
     margin-bottom:20px;
     text-align: start;
 
+}
+.textarea-meseg:hover{
+    box-shadow: 0 0 10px 3px #7777;
+    transition: all 0.5s;
 }
 
 @media screen and (max-width: 680px) {
