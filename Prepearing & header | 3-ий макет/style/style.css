@@ -129,12 +129,12 @@ html, body {
     justify-content: center;
     align-items: center;
     z-index: 1001;
-    font-size: 23px;
+    font-size: 32px;
 }
 
 
 .menu-wrap {
-    padding: 0 10px;
+    padding: 0 20px;
     border-right: #f8f8f8 solid 2px;
 }
 
@@ -226,6 +226,8 @@ html, body {
     opacity: 0;
     visibility: hidden;
     display: flex;
+    padding: 15px 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .lng-list {
@@ -356,6 +358,12 @@ html, body {
 }
 
 /*MEDIA*/
+@media screen and (max-width: 1000px) {
+    .menu {
+        font-size: 19px;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .logo {
         display: none;
