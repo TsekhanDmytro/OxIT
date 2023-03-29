@@ -4,25 +4,26 @@
 
 }
 
-
 .slick {
     overflow: hidden;
 }
 
 .slider img {
-    width: 100%;
+width: 100%;
 }
 
 .slider {
     position: relative;
     overflow: hidden;
     width: 980px;
+
 }
 
-.slider-wrap{
+.slider-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #f8f8f8;
 }
 
 .slider .slick-arrow {
@@ -49,3 +50,9 @@
     background: url('../img/arrow_right.png') 0 0 / 100% no-repeat;
 }
 
+@media screen and (min-width: 980px) {
+.slider .slick-arrow{
+    height: 69px;
+    width: 40px;
+}
+}

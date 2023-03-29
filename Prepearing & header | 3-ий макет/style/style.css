@@ -1,10 +1,11 @@
-html ,body {
+html, body {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
     position: revert;
     height: 100%;
 }
-.wrap-all{
+
+.wrap-all {
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -26,9 +27,11 @@ html ,body {
     text-decoration-line: underline;
 
 }
-.marg0{
+
+.marg0 {
     margin: 0;
 }
+
 .wrap {
     display: flex;
     flex-direction: column;
@@ -62,10 +65,7 @@ html ,body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
-
 
 .logo-name {
     height: 100px;
@@ -112,15 +112,14 @@ html ,body {
     border-bottom: 2px #777777 dashed;
     font-size: 20px;
 }
-.header-btn{
+
+.header-btn {
     border: none;
     outline: none;
     background: gainsboro;
     font-size: 20px;
     font-weight: 900;
     cursor: pointer;
-
-
 }
 
 .menu {
@@ -130,6 +129,7 @@ html ,body {
     justify-content: center;
     align-items: center;
     z-index: 1001;
+    font-size: 23px;
 }
 
 
@@ -153,11 +153,12 @@ html ,body {
 }
 
 /*----------small-menu-div*/
-.small-menu-wrap{
+.small-menu-wrap {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .small-menu {
     width: 980px;
     display: flex;
@@ -171,7 +172,7 @@ html ,body {
 }
 
 .small-menu-div {
-    margin-left: 30px;;
+    margin-left: 5px;;
 }
 
 /*---------CONTENT*/
@@ -180,8 +181,7 @@ html ,body {
     max-width: 980px;
     display: flex;
     justify-content: space-between;
-
-    margin: 30px auto  auto;
+    margin: 30px auto auto;
 
 }
 
@@ -201,6 +201,7 @@ html ,body {
 .lng {
     position: relative;
     margin-top: 5px;
+
 }
 
 .lng:hover .lng-list-wrap {
@@ -208,7 +209,7 @@ html ,body {
     visibility: visible;
     transform: translate(-50%, 0);
     position: relative;
-    transition: transform 0.5s;
+    transition: 1s;
 
 }
 
@@ -221,12 +222,13 @@ html ,body {
     position: absolute;
     top: 100%;
     left: 40%;
-    transform: translate(-50%, 15px);
+    transform: translate(-50%, 0);
     opacity: 0;
     visibility: hidden;
     display: flex;
 }
-.lng-list{
+
+.lng-list {
     margin: 5px auto 5px;
 }
 
@@ -243,11 +245,11 @@ html ,body {
 .content-left-logo p {
     text-decoration: none;
     width: 150px;
-
     font-size: 30px;
     margin-top: 0;
 }
-.content-left-logo p a{
+
+.content-left-logo p a {
     color: black;
 }
 
@@ -307,7 +309,6 @@ html ,body {
 
 .content-right-page a {
     margin: 10px;
-
 }
 
 .content-right-page a:hover {
@@ -329,14 +330,15 @@ html ,body {
     width: 45%;
 }
 
-.footer-wrap{
+.footer-wrap {
     background: #777777;
     display: flex;
     justify-content: space-around;
     align-items: start;
     height: 220px;
 }
-.footer{
+
+.footer {
     display: flex;
     width: 980px;
     margin-top: 40px;
@@ -344,13 +346,15 @@ html ,body {
 
 }
 
-.footer-dev{
+.footer-dev {
     display: flex;
     align-items: flex-start
 }
-.content-text-mobile{
+
+.content-text-mobile {
     display: none;
 }
+
 /*MEDIA*/
 @media screen and (max-width: 680px) {
     .logo {
@@ -408,28 +412,34 @@ html ,body {
         flex-direction: column;
         align-items: center;
     }
-    .content-right{
+
+    .content-right {
         padding-bottom: 0;
     }
 
-    .content-text-bottom{
+    .content-text-bottom {
         display: none;
     }
-    .content-text-mobile{
+
+    .content-text-mobile {
         display: block;
-        margin:  20px;
+        margin: 20px;
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
         margin-left: 10px;
     }
-    .footer .footer-menu{
+
+    .footer .footer-menu {
         display: none;
     }
-    .footer-mail{
+
+    .footer-mail {
         margin-bottom: 15px;
     }
-    .company-img-foo{
+
+    .company-img-foo {
         display: none;
     }
 }
